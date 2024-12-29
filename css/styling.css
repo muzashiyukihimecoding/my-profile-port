@@ -1,13 +1,15 @@
 :root {
-   --nav-blue: #000000;
+   --nav-blue: #000320;
    --wavy-blue: #111827;
    --kawaii-blue: #00fff6;
+   --hover-amimate: #00b4ff;
 }
 
 /* Fonts here */
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
 * {
+   /* this is for border to avoid mistake
    /* outline: 1px solid red; */
 }
 
@@ -26,17 +28,18 @@ body {
 
 nav {
    /* Positions biar ngga kemana2 */
-   /* position: fixed; */
+   position: fixed;
    top: 0;
    left: 0;
-   /* width: 95%; */
+   width: 100%;
    z-index: 1000;
-   /* overflow: hidden; */
+   overflow: hidden;
    /* Elemen lain */
    display: flex;
-   justify-content: space-between;
-   padding: 1rem 8rem;
-   /* padding: 20px 50px; */
+   /* justify-content: space-between; */
+   justify-content: space-around;
+   /* gap: 54rem; */
+   /* padding: 1rem 8rem; */
    background-color: var(--nav-blue);
    align-items: center;
    text-align: center;
@@ -60,7 +63,21 @@ ul {
    display: flex;
    color: white;
    list-style: none;
-   gap: 24px;
+   text-align: center;
+   align-items: center;
+   gap: 32px;
+   padding: 0;
+   transition: color 0.3s ease;
+}
+
+ul li:hover {
+   color: white;
+   background-color: var(--hover-amimate);
+   padding: 6px;
+   transform: scale(1.05);
+   transition: 0.4s ease;
+   /* opacity: 30%; */
+   border-radius: 24px;
 }
 
 .right-nav a {
@@ -68,9 +85,12 @@ ul {
    text-decoration: none;
 }
 
+/* Hero Contain 1 */
+
 .intro-profile {
    margin: 8rem;
-   margin-top: 30rem;
+   margin-top: 6rem;
+   gap: 4rem;
    display: flex;
    justify-content: space-between;
    /* justify-content: space-between; */
@@ -85,16 +105,51 @@ ul {
    margin-bottom: 2rem;
 }
 
-.cv-button {
+.goto-button {
    color: var(--nav-blue);
    background-color: var(--kawaii-blue);
    font-size: 12px;
    font-weight: 500;
    padding: 14px 36px;
    border-radius: 14px;
+   text-decoration: none;
+   /* Animate this */
+   cursor: pointer;
+   /* transition: all 0.3 ease; */
+   transition: color 0.4s ease;
+   overflow: hidden;
+}
+.goto-button:hover {
+   background-color: #00e6ff;
+   transform: scale(1.1);
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#my-photo-profile {
+.my-photo-profile {
    /* width: 480px; */
    height: 480px;
+}
+
+.round-img {
+   background-color: var(--kawaii-blue);
+   width: 200px;
+   height: 200px;
+}
+
+/* Hero Contain 2 */
+
+.about-content {
+   background-color: var(--nav-blue);
+   padding: 5rem 8rem;
+   gap: 3rem;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1080px) {
+   .my-photo-profile {
+      height: 240px;
+   }
 }
