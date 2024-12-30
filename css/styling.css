@@ -104,6 +104,7 @@ ul li:hover {
    margin-bottom: 2rem;
 }
 
+/* Buttoms */
 .goto-button {
    color: var(--nav-blue);
    background-color: var(--kawaii-blue);
@@ -139,7 +140,8 @@ ul li:hover {
 
 .about-content {
    background-color: var(--nav-blue);
-   padding: 5rem 8rem;
+   padding: 6rem 8rem;
+   padding-top: 3rem;
    gap: 3rem;
    display: flex;
    align-items: center;
@@ -147,11 +149,37 @@ ul li:hover {
    justify-content: space-between;
 }
 
-/* Display Responsive 1080p */
-@media only screen and (max-width: 1080px) {
-   .my-photo-profile {
-      height: 240px;
-   }
+/* Programming Languages */
+.ability-lang {
+   /* display: flex; */
+   padding: 4rem 8rem;
+   padding-bottom: 5rem;
+   gap: 2rem;
+}
+
+.prog-lang {
+   color: white;
+   display: flex;
+   padding-top: 2rem;
+   justify-content: space-around;
+   text-align: center;
+   font-weight: 550;
+}
+
+.prog-lang div {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   padding-bottom: 3rem;
+}
+
+.icon-lang {
+   height: 6rem;
+}
+
+.prog-lang-class {
+   /* display: flex; */
+   align-content: center;
 }
 
 /* Footer */
@@ -171,6 +199,13 @@ footer {
 .foot-contacts span {
    color: white;
    font-weight: 500;
+}
+
+/* Display Responsive 1080p */
+@media only screen and (max-width: 1080px) {
+   .my-photo-profile {
+      height: 240px;
+   }
 }
 
 /* Display Responsive for Mobile */
@@ -203,6 +238,22 @@ footer {
       padding-bottom: 4rem;
       margin: 0;
       margin-bottom: 3rem;
+   }
+
+   .ability-lang {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
+      padding-bottom: 4rem;
+      margin: 0;
+      margin-bottom: 3rem;
+   }
+
+   .prog-lang {
+      padding: 2rem;
+      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
    }
 
    footer {
