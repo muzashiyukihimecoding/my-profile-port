@@ -147,12 +147,33 @@ ul li:hover {
    justify-content: space-between;
 }
 
+/* Display Responsive 1080p */
 @media only screen and (max-width: 1080px) {
    .my-photo-profile {
       height: 240px;
    }
 }
 
+/* Footer */
+footer {
+   background-color: var(--nav-blue);
+   padding: 2rem 8rem;
+}
+
+.foot-title {
+   text-align: center;
+}
+
+.foot-contacts {
+   color: var(--kawaii-blue);
+}
+
+.foot-contacts span {
+   color: white;
+   font-weight: 500;
+}
+
+/* Display Responsive for Mobile */
 @media only screen and (max-width: 688px) {
    nav {
       flex-direction: column;
@@ -166,7 +187,8 @@ ul li:hover {
       margin: 0;
    }
    .intro-profile {
-      flex-direction: column-reverse;
+      /* flex-direction: column-reverse; */
+      flex-direction: column;
       gap: 16px;
       padding: 16px;
       padding-top: 18rem;
@@ -175,6 +197,15 @@ ul li:hover {
    }
 
    .about-content {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
+      padding-bottom: 4rem;
+      margin: 0;
+      margin-bottom: 3rem;
+   }
+
+   footer {
       flex-direction: column;
       gap: 16px;
       padding: 16px;
