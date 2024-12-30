@@ -88,8 +88,7 @@ ul li:hover {
 /* Hero Contain 1 */
 
 .intro-profile {
-   margin: 8rem;
-   margin-top: 6rem;
+   margin: 6rem 8rem;
    gap: 4rem;
    display: flex;
    justify-content: space-between;
@@ -151,5 +150,36 @@ ul li:hover {
 @media only screen and (max-width: 1080px) {
    .my-photo-profile {
       height: 240px;
+   }
+}
+
+@media only screen and (max-width: 688px) {
+   nav {
+      flex-direction: column;
+      /* gap: 16px; */
+      /* padding: 16px; */
+   }
+   .right-nav {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
+      margin: 0;
+   }
+   .intro-profile {
+      flex-direction: column-reverse;
+      gap: 16px;
+      padding: 16px;
+      padding-top: 18rem;
+      margin: 0;
+      margin-bottom: 3rem;
+   }
+
+   .about-content {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
+      padding-bottom: 4rem;
+      margin: 0;
+      margin-bottom: 3rem;
    }
 }
