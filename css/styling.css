@@ -6,8 +6,8 @@
 }
 
 /* Fonts here */
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
 
 * {
    /* this is for border to avoid mistake
@@ -22,7 +22,7 @@ body {
    margin: 0;
    padding: 0;
    /* font-family: "Lexend Deca", serif; */
-   font-family: "Montserrat", sans-serif;
+   font-family: "Montserrat", serif;
    background: var(--wavy-blue);
    overflow-x: hidden;
 }
