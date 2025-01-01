@@ -213,8 +213,22 @@ footer .my-photo-profile {
 
 /* Display Responsive 1080p */
 @media only screen and (max-width: 1080px) {
+   .intro-profile {
+      padding-top: 3rem;
+   }
+
+   /* .right-nav {
+      gap: 2rem;
+   } */
+
    .my-photo-profile {
       height: 240px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .right-nav {
+      gap: 2rem;
    }
 }
 
@@ -225,18 +239,20 @@ footer .my-photo-profile {
       /* gap: 16px; */
       /* padding: 16px; */
    }
+
    .right-nav {
       /* flex-direction: column; */
-      gap: 16px;
+      gap: 1rem;
       padding: 16px;
       margin: 0;
    }
+
    .intro-profile {
       /* flex-direction: column-reverse; */
       flex-direction: column;
       gap: 16px;
       padding: 16px;
-      padding-top: 10rem;
+      padding-top: 11rem;
       margin: 0;
       margin-bottom: 3rem;
    }
@@ -269,5 +285,9 @@ footer .my-photo-profile {
       gap: 16px;
       padding: 16px;
       margin: 0;
+   }
+
+   footer .my-photo-profile {
+      height: 240px;
    }
 }
