@@ -62,28 +62,26 @@ h1 span {
 
 ul {
    display: flex;
-   color: white;
    list-style: none;
    text-align: center;
    align-items: center;
    gap: 32px;
    padding: 0;
-   transition: color 0.3s ease;
+   /* overflow: hidden; */
 }
 
-ul li:hover {
+li a {
    color: white;
-   background-color: var(--hover-amimate);
-   padding: 6px;
-   transform: scale(1.05);
-   transition: 0.4s ease;
-   /* opacity: 30%; */
-   border-radius: 24px;
-}
-
-.right-nav a {
-   color: white;
+   /* background-color: var(--nav-blue); */
+   border-radius: 1rem;
    text-decoration: none;
+   transition: 0.5s ease;
+}
+
+li a:hover {
+   background-color: var(--hover-amimate);
+   padding: 0.6rem;
+   transform: scale(1.1);
 }
 
 /* Hero Contain 1 */
@@ -117,7 +115,7 @@ ul li:hover {
    /* Animate this */
    cursor: pointer;
    /* transition: all 0.3 ease; */
-   transition: color 0.4s ease;
+   transition: background-color 0.4s ease;
    overflow: hidden;
 }
 .goto-button:hover {
@@ -210,6 +208,7 @@ footer .my-photo-profile {
    align-self: center;
    align-content: center;
    justify-content: center;
+   height: 360px;
 }
 
 /* Display Responsive 1080p */
